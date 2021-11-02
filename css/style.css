@@ -39,4 +39,45 @@ body {
   /* clip-path: polygon(0 0, 100% 50%, 0 100%); */
   /* clip-path: polygon(50% 0, 100% 100%, 0 100%); */
   /* Bunlar da üçgen.. */
+  position: relative;
+}
+
+.logo-box {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.logo {
+  height: 35px;
+}
+
+.text-box {
+  position: absolute;
+
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Bu 3 satırla yazıyı ortalamış olduk */
+}
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.heading-primary-main {
+  display: block;
+  /* Böylece her iki yazının alt alta olmasını sağladık */
+  font-size: 60px;
+  font-weight: 400;
+  letter-spacing: 35px;
+  /* Omnifood başlıklarını da incele, bence bu güzel olmuş */
+}
+
+.heading-primary-sub {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 17.4px;
 }
