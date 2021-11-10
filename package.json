@@ -1,0 +1,22 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "Landing page fot natours",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fatihay/natours.git"
+  },
+  "author": "Fatih Ay",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fatihay/natours/issues"
+  },
+  "homepage": "https://github.com/fatihay/natours#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
