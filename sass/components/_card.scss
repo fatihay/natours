@@ -6,10 +6,10 @@
   // değer düştükçe etki daha da artıyor
   -moz-perspective: 150rem;
   position: relative;
-  height: 50rem;
+  height: 52rem;
 
   &__side {
-    height: 50rem;
+    height: 52rem;
     transition: all 0.8s ease;
 
     position: absolute;
@@ -88,5 +88,41 @@
     position: absolute;
     top: 12rem;
     right: 2rem;
+    width: 75%;
+  }
+
+  &__heading-span {
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    // box decoration clone ile alt satıra kayan metinlere padding verince 2 farklı metin gibi boşlukların olmasını sağlıyor..
+
+    z-index: 100000;
+    &--1 {
+      background-image: linear-gradient(
+        to right bottom,
+        $color-secondary-light,
+        $color-secondary-dark
+      );
+    }
+  }
+
+  &__details {
+    padding: 3rem;
+    ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto;
+      // ortalamanın en kolay yolu
+      li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem;
+
+        &:not(:last-child) {
+          border-bottom: 1px solid $color-grey-light-2;
+        }
+      }
+    }
   }
 }
