@@ -37,6 +37,22 @@
           $color-secondary-dark
         );
       }
+
+      &-2 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-primary-light,
+          $color-primary-dark
+        );
+      }
+
+      &-3 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-tertiary-light,
+          $color-tertiary-dark
+        );
+      }
     }
   }
 
@@ -58,6 +74,9 @@
     background-blend-mode: screen;
     // linear dradient kullandığımızda 2. sırada olan fotoğrafın görünmesi için..
     // bu blend mode internet explorer ve microsoft edge'de yok
+
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
     &--1 {
       background-image: linear-gradient(
           to right bottom,
@@ -72,10 +91,23 @@
       // clip path internet explorer ve microsoft edge'de çalışmıyor
     }
     &--2 {
-      background-image: url(../img/nat-5.jpg);
+      background-image: linear-gradient(
+        to right bottom,
+        $color-primary-light,
+        $color-primary-dark
+      ), url(../img/nat-6.jpg);
+
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     }
     &--3 {
-      background-image: url(../img/nat-5.jpg);
+      background-image: linear-gradient(
+        to right bottom,
+        $color-tertiary-light,
+        $color-tertiary-dark
+      ), url(../img/nat-7.jpg);
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     }
   }
 
@@ -105,6 +137,23 @@
         $color-secondary-dark
       );
     }
+
+
+    &--2 {
+      background-image: linear-gradient(
+        to right bottom,
+        $color-primary-light,
+        $color-primary-dark
+      );
+    }
+
+    &--3 {
+      background-image: linear-gradient(
+        to right bottom,
+        $color-tertiary-light,
+        $color-tertiary-dark
+      );
+    }
   }
 
   &__details {
@@ -125,4 +174,30 @@
       }
     }
   }
+
+  &__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    // translate içindeki değerler parent'a ait değil elemente ait
+    width: 90%;
+    text-align: center;
+  }
+
+  &__price-box{
+    color: $color-white;
+    margin-bottom: 8rem;
+  }
+
+  &__price-only{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+  }
+
+  &__price-value{
+    font-size: 6rem;
+    font-weight: 100;
+  }
+
 }
