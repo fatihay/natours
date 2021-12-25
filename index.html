@@ -273,73 +273,102 @@
     </section>
 
 
-<section class="section-stories">
+    <section class="section-stories">
 
-  <div class="bg-video">
-    <video class="bg-video__content" autoplay muted loop>
-      <!-- otomatik oynatacak, sessiz ve loop özelliği açık -->
-      <source src="img/video.mp4" type="video/mp4">
-      <source src="img/video.webm" type="video/webm">
-      <!-- video içindeki src tag'ini kaldırdık -->
-      <!-- bu videolar coverr.co adlı siteden alındı -->
+      <div class="bg-video">
+        <video class="bg-video__content" autoplay muted loop>
+          <!-- otomatik oynatacak, sessiz ve loop özelliği açık -->
+          <source src="img/video.mp4" type="video/mp4">
+          <source src="img/video.webm" type="video/webm">
+          <!-- video içindeki src tag'ini kaldırdık -->
+          <!-- bu videolar coverr.co adlı siteden alındı -->
 
-      Your browser is not supported!
-      <!-- Yukarıdaki videolar çalışmazsa bu text okunacak -->
-    </video>
-  </div>
-
-  <div class="u-center-text u-margin-bottom-big">
-    <!-- utility class -->
-    <h2 class="heading-secondary">
-      We make people genuinely happy
-    </h2>
-  </div>
-
-  <div class="row">
-    <div class="story">
-      <figure class="story__shape">
-        <img src="img/nat-8.jpg" alt="Person on a tour" class="story__img">
-        <figcaption class="story__caption">Mary Smith</figcaption>
-        <!-- figcaption da özel bir etiket -->
-      </figure>
-      <!-- figure semantic element, bir img ve başlık ile birlikte -->
-
-      <div class="story__text">
-        <h3 class="heading-tertiary u-margin-bottom-small">
-          I had the best week ever with my family
-        </h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos obcaecati minus velit voluptatibus culpa amet tempora incidunt reiciendis aliquid qui, iusto dolorem doloribus aspernatur dicta! Corrupti magni odit vero repellendus? Corrupti magni odit vero repellendus? Corrupti magni odit vero repellendus?</p>
+          Your browser is not supported!
+          <!-- Yukarıdaki videolar çalışmazsa bu text okunacak -->
+        </video>
       </div>
 
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="story">
-      <figure class="story__shape">
-        <img src="img/nat-9.jpg" alt="Person on a tour" class="story__img">
-        <figcaption class="story__caption">Jack Wilson</figcaption>
-        <!-- figcaption da özel bir etiket -->
-      </figure>
-      <!-- figure semantic element, bir img ve başlık ile birlikte -->
-
-      <div class="story__text">
-        <h3 class="heading-tertiary u-margin-bottom-small">
-          WOW! My life is completely different now
-        </h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos obcaecati minus velit voluptatibus culpa amet tempora incidunt reiciendis aliquid qui, iusto dolorem doloribus aspernatur dicta! Corrupti magni odit vero repellendus? Corrupti magni odit vero repellendus? Corrupti magni odit vero repellendus?</p>
+      <div class="u-center-text u-margin-bottom-big">
+        <!-- utility class -->
+        <h2 class="heading-secondary">
+          We make people genuinely happy
+        </h2>
       </div>
 
-    </div>
+      <div class="row">
+        <div class="story">
+          <figure class="story__shape">
+            <img src="img/nat-8.jpg" alt="Person on a tour" class="story__img">
+            <figcaption class="story__caption">Mary Smith</figcaption>
+            <!-- figcaption da özel bir etiket -->
+          </figure>
+          <!-- figure semantic element, bir img ve başlık ile birlikte -->
 
-  </div>
-      <div class="u-center-text u-margin-top-huge">
-        <a href="#" class="btn-text">Read all stories &rarr;</a>
-        <!-- sonuna ok işareti koyduk -->
-  </div>
+          <div class="story__text">
+            <h3 class="heading-tertiary u-margin-bottom-small">
+              I had the best week ever with my family
+            </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos obcaecati minus velit voluptatibus culpa amet tempora incidunt reiciendis aliquid qui, iusto dolorem doloribus aspernatur dicta! Corrupti magni odit vero repellendus? Corrupti magni odit vero repellendus? Corrupti magni odit vero repellendus?</p>
+          </div>
 
-</section>
+        </div>
+      </div>
 
+      <div class="row">
+        <div class="story">
+          <figure class="story__shape">
+            <img src="img/nat-9.jpg" alt="Person on a tour" class="story__img">
+            <figcaption class="story__caption">Jack Wilson</figcaption>
+            <!-- figcaption da özel bir etiket -->
+          </figure>
+          <!-- figure semantic element, bir img ve başlık ile birlikte -->
+
+          <div class="story__text">
+            <h3 class="heading-tertiary u-margin-bottom-small">
+              WOW! My life is completely different now
+            </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos obcaecati minus velit voluptatibus culpa amet tempora incidunt reiciendis aliquid qui, iusto dolorem doloribus aspernatur dicta! Corrupti magni odit vero repellendus? Corrupti magni odit vero repellendus? Corrupti magni odit vero repellendus?</p>
+          </div>
+
+        </div>
+
+      </div>
+          <div class="u-center-text u-margin-top-huge">
+            <a href="#" class="btn-text">Read all stories &rarr;</a>
+            <!-- sonuna ok işareti koyduk -->
+      </div>
+
+    </section>
+
+    <section class="section-book">
+      <div class="row">
+        <div class="book">
+          <div class="book__form">
+            <form action="#" class="form">
+              <div class="u-margin-bottom-medium">
+                <h2 class="heading-secondary">
+                  Start booking now
+                </h2>
+              </div>
+              <div class="form__group">
+                <input type="text" class="form__input" placeholder="Full Name" id="name" required>
+                <label for="name" class="form__label">Full Name</label>
+                <!-- input'un id'si label'ın for'una yazılır ki bağlantı sağlansın -->
+              </div>
+
+              <div class="form__group">
+                <input type="email" class="form__input" placeholder="Email address" id="email" required>
+                <label for="email" class="form__label">Email address</label>
+                <!-- input'un id'si label'ın for'una yazılır ki bağlantı sağlansın -->
+              </div>
+
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
 
   </main>
 
