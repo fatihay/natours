@@ -9,10 +9,10 @@
     font-size: $defaul-font-size;
     transform: skewX(-12deg);
 
-    & > * {
+    // & > * {
         // transform: skewX(12deg);
         // buradaki skew'i aşağıda yaptık, yoksa kabul etmedi, text ve shape ayrı ayrı skew yaptık
-    }
+    // }
 
     &__shape{
         width: 15rem;
@@ -36,13 +36,53 @@
         transform: translateX(-3rem) skewX(12deg);
         // araya boşluk için margin yerine bunu kullanıyoruz
         // yukarıdaki skew'i burada yaptık, yoksa kabul etmedi
+
+        overflow: hidden;
+        // yandaki çizgiyi kaybettik
+
+        position: relative;
     }
 
     &__img{
         height: 100%;
+        transform: translateX(-4rem) scale(1.4);
+        backface-visibility: hidden;
+        // sanırım chrome de şekil garip bir hale geldi, bu şekilde düzelttik
+
+        transition: all .5s;
     }
 
     &__text{
         transform: skewX(12deg);
     }
+
+    &__caption{
+        position: absolute;
+        font-size: $defaul-font-size;
+        text-transform: uppercase;
+        color: $color-white;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 20%);
+        text-align: center;
+        opacity: 0;
+        transition: all .5s;
+        backface-visibility: hidden;
+        // animasyonun sonunda sallanmasını engelliyoruz
+    }
+
+    &:hover &__caption {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+        // storynin üzerine gelince captionda bu değişiklikler olsun
+    }
+
+
+    &:hover &__img{
+        transform: translateX(-4rem) scale(1);
+        // translate x'i de aldık yoksa sağa kayıyor
+        filter: blur(3px) brightness(80%);
+        // blur verdik ve koyulaştırdık
+    }
+
 }
