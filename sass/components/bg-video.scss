@@ -1,0 +1,23 @@
+
+
+.bg-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .15;
+    overflow: hidden;
+
+    &__content{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        // parent elementi kaplıyacak, boyutları tam olmadığı için kırpılacak, en boy oranı bozulmayacak
+        // fill dersek en boy oranını korumuyor
+
+        // background-image: cover;
+        // bu işe yaramıyor
+    }
+}
