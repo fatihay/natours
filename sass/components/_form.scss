@@ -15,6 +15,7 @@
     border-bottom: 3px solid transparent;
     width: 90%;
     display: block;
+    transition: all 0.3s;
 
     &:focus {
       outline: none;
@@ -51,5 +52,56 @@
     // animasyon için opacity 0 verdik
     visibility: hidden;
     transform: translateY(-4rem);
+  }
+
+  &__radio-group {
+    width: 49%;
+    // yanyana gelmelerini sağladık
+    display: inline-block;
+  }
+
+  &__radio-input {
+    display: none;
+  }
+
+  &__radio-label {
+    font-size: $defaul-font-size;
+    cursor: pointer;
+    position: relative;
+    padding-left: 4.5rem;
+  }
+
+  &__radio-button {
+    height: 3rem;
+    width: 3rem;
+    border: 5px solid $color-primary;
+    border-radius: 50%;
+    display: inline-block;
+    // height ve width özelliklerini ancak block ve inline-block elementlerde kullanabiliyoruz..
+    // block dersek de tüm satırı kaplıyor, o yüzden inline-block dedik
+    position: absolute;
+    // urada absolute dendiği için relative için ayrıca gerek yok
+    left: 0rem;
+    top: -0.4rem;
+    &::after {
+      content: "";
+      display: block;
+      height: 1.3rem;
+      width: 1.3rem;
+      border-radius: 50%;
+      position: absolute;
+      // parent elementin relative olmasına gerek yok
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: $color-primary;
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
+  }
+
+  &__radio-input:checked ~ &__radio-label &__radio-button::after {
+    opacity: 1;
+    // sibling elementin kullanımına dikat et
   }
 }

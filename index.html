@@ -267,9 +267,9 @@
         </div>
       </div>
 
-        <div class="u-center-text u-margin-top-huge">
-          <a href="#" class="btn btn--green">Discover all tours</a>
-        </div>
+      <div class="u-center-text u-margin-top-huge">
+        <a href="#" class="btn btn--green">Discover all tours</a>
+      </div>
     </section>
 
 
@@ -308,7 +308,9 @@
             <h3 class="heading-tertiary u-margin-bottom-small">
               I had the best week ever with my family
             </h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos obcaecati minus velit voluptatibus culpa amet tempora incidunt reiciendis aliquid qui, iusto dolorem doloribus aspernatur dicta! Corrupti magni odit vero repellendus? Corrupti magni odit vero repellendus? Corrupti magni odit vero repellendus?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos obcaecati minus velit voluptatibus culpa
+              amet tempora incidunt reiciendis aliquid qui, iusto dolorem doloribus aspernatur dicta! Corrupti magni
+              odit vero repellendus? Corrupti magni odit vero repellendus? Corrupti magni odit vero repellendus?</p>
           </div>
 
         </div>
@@ -327,15 +329,17 @@
             <h3 class="heading-tertiary u-margin-bottom-small">
               WOW! My life is completely different now
             </h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos obcaecati minus velit voluptatibus culpa amet tempora incidunt reiciendis aliquid qui, iusto dolorem doloribus aspernatur dicta! Corrupti magni odit vero repellendus? Corrupti magni odit vero repellendus? Corrupti magni odit vero repellendus?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos obcaecati minus velit voluptatibus culpa
+              amet tempora incidunt reiciendis aliquid qui, iusto dolorem doloribus aspernatur dicta! Corrupti magni
+              odit vero repellendus? Corrupti magni odit vero repellendus? Corrupti magni odit vero repellendus?</p>
           </div>
 
         </div>
 
       </div>
-          <div class="u-center-text u-margin-top-huge">
-            <a href="#" class="btn-text">Read all stories &rarr;</a>
-            <!-- sonuna ok işareti koyduk -->
+      <div class="u-center-text u-margin-top-huge">
+        <a href="#" class="btn-text">Read all stories &rarr;</a>
+        <!-- sonuna ok işareti koyduk -->
       </div>
 
     </section>
@@ -362,12 +366,40 @@
                 <!-- input'un id'si label'ın for'una yazılır ki bağlantı sağlansın -->
               </div>
 
+              <div class="form__group u-margin-bottom-medium">
+                <div class="form__radio-group">
+                  <input type="radio" class="form__radio-input" id="small" name="size">
+                  <!-- css'de radio butonları şekillendiremiyoruz -->
+                  <!-- name attribute sayesinde sadece 1 tane radio buton seçilebiliyor -->
+                  <label for="small" class="form__radio-label">
+                    <span class="form__radio-button"></span>
+                    <!-- css'de radio butonları şekillendiremiyoruz. O yüzden span element kullanıyoruz -->
+                    Small tour group
+                  </label>
+                </div>
+
+                <div class="form__radio-group">
+                  <input type="radio" class="form__radio-input" id="large" name="size">
+                  <label for="large" class="form__radio-label">
+                    <span class="form__radio-button"></span>
+                    Large tour group
+                  </label>
+                </div>
+
+              </div>
+
+              <div class="form__group">
+                <button class="btn btn--green">Next step &rarr;</button>
+
+              </div>
+
             </form>
 
           </div>
 
         </div>
       </div>
+
     </section>
 
   </main>
