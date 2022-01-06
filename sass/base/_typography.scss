@@ -6,8 +6,7 @@ body {
   /* font-size: 16px; */
   line-height: 1.7;
   color: $color-grey-dark;
-  padding: 3rem;
-  /* padding is not getting inherited */
+  
 }
 
 .heading-primary {
@@ -34,6 +33,12 @@ body {
     /* animation-iteration-count: 3; */
 
     /* animation-delay: 3s; */
+
+    @include respond(phone) {
+      letter-spacing: 1rem;
+      font-size: 5rem;
+    }
+
   }
 
   &--sub {
@@ -43,6 +48,11 @@ body {
     letter-spacing: 1.75rem;
 
     animation: moveInRight 1s ease-out;
+
+    @include respond(phone) {
+      letter-spacing: .5rem;
+    }
+
   }
 }
 
